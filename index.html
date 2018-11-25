@@ -1,13 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Juego de Matematicas </title>
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="styling.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MathGame</title>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-    <div id="container">
+<section class="strips">
+  <article class="strips__strip">
+    <div class="strip__content">
+      <h1 class="strip__title" data-name="column__1"><i class="fas fa-info-circle fa-3x"></i></h1>
+      <div class="strip__inner-text">
+        <h2>Completa los tres niveles y demuestra que eres el mejor matemático.</h2>
+        <i class="fas fa-trophy fa-7x" style="color: #FFD700;"></i>
+        <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+      </div>
+    </div>
+  </article>
+  <article class="strips__strip">
+    <div class="strip__content">
+      <h1 class="strip__title" data-name="column__2">Neymar
+        <i class="far fa-star fa-3x"></i>
+      </h1>
+      <div class="strip__inner-text">
+
+        
+
+        <div id="container">
         <div id="score">
             Puntaje: <span id="scorevalue">0</span>
         </div>
@@ -35,6 +70,103 @@
            
         </div>
     </div>
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </article>
+  <article class="strips__strip">
+    <div class="strip__content">
+      <h1 class="strip__title" data-name="column__3">Lenín 
+        <i class="fas fa-star-half-alt fa-3x"></i>
+      </h1>
+      <div class="strip__inner-text">
+
+        <div id="container">
+        <div id="score">
+            Puntaje: <span id="scorevalue">0</span>
+        </div>
+        <div id="correct">Correcto</div>
+        <div id="wrong">Intentelo de nuevo</div>
+        <div id="question">
+            
+        </div>
+        
+        <div id="instruction">
+            click en la respuesta correcta
+        </div>
+        
+        <div id="choices">
+            <div id="box1" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box3" class="box"></div>
+            <div id="box4" class="box"></div>
+        </div>
+        <div id="startreset">Iniciar Juego</div>
+        <div id="timeremaining">
+            Tiempo restante: <span id="timeremainingvalue">60</span> sec
+        </div>
+        <div id="gameover">
+           
+        </div>
+    </div>
+
+
+      </div>
+    </div>
+  </article>
+  <article class="strips__strip">
+    <div class="strip__content">
+      <h1 class="strip__title" data-name="column__4">Newton
+        <i class="fas fa-star fa-3x"></i>
+      </h1>
+      <div class="strip__inner-text">
+
+        <div id="container">
+        <div id="score">
+            Puntaje: <span id="scorevalue">0</span>
+        </div>
+        <div id="correct">Correcto</div>
+        <div id="wrong">Intentelo de nuevo</div>
+        <div id="question">
+            
+        </div>
+        
+        <div id="instruction">
+            click en la respuesta correcta
+        </div>
+        
+        <div id="choices">
+            <div id="box1" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box3" class="box"></div>
+            <div id="box4" class="box"></div>
+        </div>
+        <div id="startreset">Iniciar Juego</div>
+        <div id="timeremaining">
+            Tiempo restante: <span id="timeremainingvalue">60</span> sec
+        </div>
+        <div id="gameover">
+           
+        </div>
+    </div>
+
+      </div>
+    </div>
+  </article>
+  <article class="strips__strip">
+    <div class="strip__content">
+      <h1 class="strip__title" data-name="column__5"><i class="fas fa-cog fa-3x"></i></h1>
+      <div class="strip__inner-text">
+        <h2>Section 5</h2>
+        <p>Content 5</p>
+      </div>
+    </div>
+  </article>
+  <i class="fa fa-close strip__close"></i> 
+</section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
