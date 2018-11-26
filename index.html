@@ -20,33 +20,42 @@
 <body>
 <section class="strips">
   <article class="strips__strip">
+
+
     <div class="strip__content">
-      <h1 class="strip__title" data-name="column__1"><i class="fas fa-info-circle fa-3x"></i></h1>
-      <div class="strip__inner-text">
-        <h2>Completa los tres niveles y demuestra que eres el mejor matemático.</h2>
-        <i class="fas fa-trophy fa-7x" style="color: #FFD700;"></i>
-        <div class="jquery-script-ads"><script type="text/javascript"><!--
-google_ad_client = "ca-pub-2783044520727903";
-/* jQuery_demo */
-google_ad_slot = "2780937993";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></div>
-      </div>
+      <h1 class="strip__title" data-name="column__1">
+        <i class="fas fa-child fa-5x"></i></h1>
+        <div class="strip__inner-text">
+            <h2>Completa los tres niveles y demuestra que eres el mejor matemático.</h2>
+            <i class="fas fa-trophy fa-7x" style="color: #FFD700;"></i>
+        </div>
     </div>
   </article>
   <article class="strips__strip" onclick="columna=1; console.log(columna);">
     <div class="strip__content">
-      <h1 class="strip__title" data-name="column__2">Neymar
-        <i class="far fa-star fa-3x"></i>
-      </h1>
-      <div class="strip__inner-text">       
+      <h1 class="strip__title" data-name="column__2">
+        <i class="fas fa-info-circle fa-5x"></i></h1>
+      <div class="strip__inner-text">    
+        <h2>Responde las preguntas en el menor tiempo posible.</h2><i class="fas fa-fire fa-3x" style="color: red;"></i>
+        <h2>Si aciertas subes la dificultad de las preguntas.</h2><i class="far fa-arrow-alt-circle-up fa-3x" style="color: brown;"></i>
+      </div>
+    </div>
+  </article>
 
+
+
+  <article class="strips__strip" onclick="columna=2; console.log(columna);">
+    <div class="strip__content">
+      <h1 class="strip__title" data-name="column__3">
+        <i class="fas fa-play fa-5x"></i>
+      </h1>
+      <div class="strip__inner-text">
         <div class="container">
+            <div class="row">
+                <img class="heart" src="images/heart.png" width="70px">
+                <img class="heart" src="images/heart.png" width="70px">
+                <img class="heart" src="images/heart.png" width="70px">
+            </div> 
             <div id="score" class="score">
                 Puntaje: <strong><span id="scorevalue" class="scorevalue">0</span></strong> 
             </div><div id="correct" class="correct"><i class="fas fa-check fa-3x" style="color:#42e252;"></i></div>
@@ -71,92 +80,28 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
                 Tiempo restante: <span id="timeremainingvalue" class="timeremainingvalue">60</span> sec
             </div>
 <!--             <div id="gameover" class="gameover"></div>
--->        </div>
-      </div>
-    </div>
-  </article>
-
-
-
-  <article class="strips__strip" onclick="columna=2; console.log(columna); playing = false;">
-    <div class="strip__content">
-      <h1 class="strip__title" data-name="column__3">Lenín 
-        <i class="fas fa-star-half-alt fa-3x"></i>
-      </h1>
-      <div class="strip__inner-text">
-
-        <div class="container">
-            <div id="score2" class="score">
-                Puntaje: <strong><span id="scorevalue2" class="scorevalue">0</span></strong> 
-            </div><div id="correct2" class="correct"><i class="fas fa-check fa-3x" style="color:#42e252;"></i></div>
-            <div id="wrong2" class="wrong"><i class="fas fa-times fa-3x" style="color:#de401a;"></i></div><div id="timeremaining2" class="timeremaining">
-                Tiempo restante:<strong><span id="timeremainingvalue2" class="timeremainingvalue">60</span>sec</strong>
-            </div>
-            
-            <div id="question2" class="question"></div>
-            
-            <div id="instruction" class="instruction">
-                Seleccione la respuesta correcta.
-            </div>
-            
-            <div id="choices2" class="choices">
-                <div id="box21" class="box"></div>
-                <div id="box22" class="box"></div>
-                <div id="box23" class="box"></div>
-                <div id="box24" class="box"></div>
-            </div>
-            <div id="startreset2" class="startreset">Iniciar Juego</div>
-            <div id="timeremaining2" class="timeremaining">
-                Tiempo restante: <span id="timeremainingvalue2" class="timeremainingvalue">60</span> sec
-            </div>
-        </div>
-
-
+-->     </div>
+       
       </div>
     </div>
   </article>
   <article class="strips__strip" onclick="columna=3; console.log(columna);">
     <div class="strip__content">
-      <h1 class="strip__title" data-name="column__4">Newton
-        <i class="fas fa-star fa-3x"></i>
+      <h1 class="strip__title" data-name="column__4">
+        <i class="fas fa-share-alt fa-5x"></i>
       </h1>
       <div class="strip__inner-text">
 
-       <div class="container">
-            <div id="score3" class="score">
-                Puntaje: <strong><span id="scorevalue3" class="scorevalue">0</span></strong> 
-            </div><div id="correct3" class="correct"><i class="fas fa-check fa-3x" style="color:#42e252;"></i></div>
-            <div id="wrong3" class="wrong"><i class="fas fa-times fa-3x" style="color:#de401a;"></i></div><div id="timeremaining3" class="timeremaining">
-                Tiempo restante:<strong><span id="timeremainingvalue3" class="timeremainingvalue">60</span>sec</strong>
-            </div>
-            
-            <div id="question3" class="question"></div>
-            
-            <div id="instruction" class="instruction">
-                Seleccione la respuesta correcta.
-            </div>
-            
-            <div id="choices" class="choices">
-                <div id="box31" class="box"></div>
-                <div id="box32" class="box"></div>
-                <div id="box33" class="box"></div>
-                <div id="box34" class="box"></div>
-            </div>
-            <div id="startreset3" class="startreset">Iniciar Juego</div>
-            <div id="timeremaining3" class="timeremaining">
-                Tiempo restante: <span id="timeremainingvalue3" class="timeremainingvalue">60</span> sec
-            </div>
-<!--             <div id="gameover" class="gameover"></div>
--->        </div>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Vengan y aprendan matemáticas en esta página. ¡Está de lujo!" data-url="http://localhost/web-math-game/index.html" data-hashtags="Js" data-related="iAnthoro" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+       
       </div>
     </div>
   </article>
   <article class="strips__strip">
     <div class="strip__content">
-      <h1 class="strip__title" data-name="column__5"><i class="fas fa-cog fa-3x"></i></h1>
+      <h1 class="strip__title" data-name="column__5"><i class="fas fa-cog fa-5x"></i></h1>
       <div class="strip__inner-text">
-        <h2>Section 5</h2>
-        <p>Content 5</p>
+        <audio id="music" src="music.mp3" preload="auto" controls></audio>
       </div>
     </div>
   </article>
@@ -171,11 +116,11 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
       <div class="modal-content">
         <div class="modal-header" style="padding:35px 50px;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4>Se acabó tu tiempo 😣</h4>
+          <h4>Fin del juego 😣</h4>
         </div>
         <div class="modal-body" id="gameover" style="padding:40px 50px;">
-            <p><h3>Tu puntaje es: </h3> <h3 id="final-score"></h3></p>
-          
+            <p>Tu puntaje es: <span id="final-score"></span></p>
+            <span>Tu nivel es: </span><img id="img-level" width=100px>
         </div>
         
       </div>
