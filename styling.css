@@ -1,84 +1,90 @@
-#container{
-    height: 400px;
-    width: 550px;
-    background-color: #9DD2DA;
-    margin: 100px auto;
+.container{
+    height: 600px;
+    width: 950px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 0px 0px #009DE4;
     position: relative;
     -webkit-box-shadow: 0px 4px 0px 0px #009DE4;
     -moz-box-shadow: 0px 4px 0px 0px #009DE4;
+    color: black;
+
 
 }
-#score {
-    background-color: #F1FF92;
-    color: #888E5F;
-    padding: 11px;
+.score {
+    border-radius: 25px;
+    border: 7px solid rgba(231,18,36,0.65);
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: rgba(231,18,36,0.65);
+    padding: 5px;
     position: absolute;
-    left: 500px;
-    box-shadow: 0px 4px 0px #9da853;
+}
+.scorevalue{
+    color:  white;
+    font-family: 'Roboto', black ;
+    font-size:  25px;
+}
+
+.timeremainingvalue{
+    color:  white;
+    font-family: 'Roboto', black ;
+    font-size:  25px;
 }
 
 
-#correct {
+.correct {
     position: absolute;
-    left: 260px;
-    background-color: #42e252;
-    color: white;
+    left: 350px;
     padding: 11px;
     display: none;
 }
 
-#wrong {
+.wrong {
     position: absolute;
-    left: 250px;
-    background-color: #de401a;
-    color: white;
+    left: 350px;
     padding: 11px;
     display: none;
 }
 
-#question {
-    width: 450px;
+.question {
+    width: 750px;
     height: 150px;
     margin: 50px auto 10px auto;
-    background-color: #9DA0AE;
-    box-shadow: 0px 4px #535AA8;
     font-size: 100px;
     text-align: center;
-    font-family: cursive, sans-serif;
     color: black;
+    border-radius: 25px;
+    border: 7px solid rgba(150,6,102,0.65);
+    padding-right: 30px;
+    padding-left: 30px;
     
 }
 
-#instruction {
-    width: 450px;
-    height: 50px;
-    background-color: #B481D9;
+.instruction {
     margin: 10px auto;
-    text-align: center;
-    line-height: 45px;
-    box-shadow: 0px 4px #8153A8;
-    -webkit-box-shadow: 0px 4px #8153A8;
-    -moz-box-shadow: 0px 4px #8153A8;
-
+    border-radius: 25px;
+    border: 7px solid rgba(28,206,102,0.65);
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 500px;
+    font-size: 20px;
 }
 
-#choices {
-    width: 450px;
+.choices {
+    width: 750px;
     height: 100px;
     margin: 5px auto;
     
 }
 
 .box {
-    height: 85px;
-    width: 85px;
-    background-color: #fff;
+    height: 70px;
+    width: 160px;
+    background-color: rgba(256,256,256,0.5);
     float: left;
     margin-right: 36px;
-    border-radius: 3px;
+    border-radius: 7px;
     cursor: pointer;
     box-shadow: 0px 4px rgba(0,0,0,0.2);
     text-align: center;
@@ -89,10 +95,10 @@
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     -ms-transition: all 0.2s;
-
+    font-size: 70px;
 }
 
-.box:hover, #startreset:hover{
+.box:hover, .startreset:hover{
  background-color: #9C89F6;
     color: #fff;
     box-shadow: 0px 4px #6B54D3;
@@ -101,7 +107,7 @@
 
 }
 
-.box:active, #startreset:active{
+.box:active, .startreset:active{
     background-color: #9C89F6;
     color: #fff;
     box-shadow: 0px 0px #6B54D3;
@@ -113,7 +119,7 @@
     margin-right: 0;
 }
 
-#startreset {
+.startreset {
     width: 108px;
     padding: 10px;
     background-color: rgba(255,255,255,0.5);
@@ -130,21 +136,20 @@
     -ms-transition: all 0.2s;
 }
 
-#timeremaining {
-    width: 152px;
-    padding: 10px;
-    position: absolute;
-    top: 395px;
-    left: 400px;
-    background-color: rgba(181, 235, 36, 0.78);
-    border-rad: 3px;
-    -webkit-box-shadow: 0px 4px rgba(0,0,0.2);
-    box-shadow: 0px 4px rgba(0,0,0.2);
-    /*visibility: hidden;*/
+.timeremaining {
+    border-radius: 25px;
+    border: 7px solid rgba(250,230,10,0.65);
+    padding-right: 30px;
+    padding-left: 30px;
+    padding: 11px;
+    width: 300px;
+    position: relative;
+    left: 600px;
     display: none;
+    background-color: rgba(250,230,10,0.65);
 }
 
-#gameover {
+.gameover {
     height: 200px;
     width: 500px;
     background: linear-gradient(#F3CA6B, #F3706C);
@@ -162,6 +167,14 @@
     z-index: 2;
     display: none;
 }
+
+
+.modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
 
 /*STYLES FROM TEMPLATE---------------------------------------------------*/
 
@@ -503,8 +516,9 @@
   }
 }
 /* Demo purposes */
-body {
-  font-family: 'Open Sans';
+body {  
+    font-family: 'Roboto', sans-serif;
+    font-size:  20px;
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
   line-height: 1.5;

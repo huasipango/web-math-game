@@ -7,8 +7,14 @@
 <title>MathGame</title>
 <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="styling.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -33,122 +39,115 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
       </div>
     </div>
   </article>
-  <article class="strips__strip">
+  <article class="strips__strip" onclick="columna=1; console.log(columna);">
     <div class="strip__content">
       <h1 class="strip__title" data-name="column__2">Neymar
         <i class="far fa-star fa-3x"></i>
       </h1>
-      <div class="strip__inner-text">
+      <div class="strip__inner-text">       
 
-        
-
-        <div id="container">
-        <div id="score">
-            Puntaje: <span id="scorevalue">0</span>
-        </div>
-        <div id="correct">Correcto</div>
-        <div id="wrong">Intentelo de nuevo</div>
-        <div id="question">
+        <div class="container">
+            <div id="score" class="score">
+                Puntaje: <strong><span id="scorevalue" class="scorevalue">0</span></strong> 
+            </div><div id="correct" class="correct"><i class="fas fa-check fa-3x" style="color:#42e252;"></i></div>
+            <div id="wrong" class="wrong"><i class="fas fa-times fa-3x" style="color:#de401a;"></i></div><div id="timeremaining" class="timeremaining">
+                Tiempo restante:<strong><span id="timeremainingvalue" class="timeremainingvalue">60</span>sec</strong>
+            </div>
             
-        </div>
-        
-        <div id="instruction">
-            click en la respuesta correcta
-        </div>
-        
-        <div id="choices">
-            <div id="box1" class="box"></div>
-            <div id="box2" class="box"></div>
-            <div id="box3" class="box"></div>
-            <div id="box4" class="box"></div>
-        </div>
-        <div id="startreset">Iniciar Juego</div>
-        <div id="timeremaining">
-            Tiempo restante: <span id="timeremainingvalue">60</span> sec
-        </div>
-        <div id="gameover">
-           
-        </div>
-    </div>
+            <div id="question" class="question"></div>
+            
+            <div id="instruction" class="instruction">
+                Seleccione la respuesta correcta.
+            </div>
+            
+            <div id="choices" class="choices">
+                <div id="box1" class="box"></div>
+                <div id="box2" class="box"></div>
+                <div id="box3" class="box"></div>
+                <div id="box4" class="box"></div>
+            </div>
+            <div id="startreset" class="startreset">Iniciar Juego</div>
+            <div id="timeremaining" class="timeremaining">
+                Tiempo restante: <span id="timeremainingvalue" class="timeremainingvalue">60</span> sec
+            </div>
+<!--             <div id="gameover" class="gameover"></div>
+-->        </div>
       </div>
     </div>
   </article>
-  <article class="strips__strip">
+
+
+
+  <article class="strips__strip" onclick="columna=2; console.log(columna); playing = false;">
     <div class="strip__content">
       <h1 class="strip__title" data-name="column__3">Lenín 
         <i class="fas fa-star-half-alt fa-3x"></i>
       </h1>
       <div class="strip__inner-text">
 
-        <div id="container">
-        <div id="score">
-            Puntaje: <span id="scorevalue">0</span>
-        </div>
-        <div id="correct">Correcto</div>
-        <div id="wrong">Intentelo de nuevo</div>
-        <div id="question">
+        <div class="container">
+            <div id="score2" class="score">
+                Puntaje: <strong><span id="scorevalue2" class="scorevalue">0</span></strong> 
+            </div><div id="correct2" class="correct"><i class="fas fa-check fa-3x" style="color:#42e252;"></i></div>
+            <div id="wrong2" class="wrong"><i class="fas fa-times fa-3x" style="color:#de401a;"></i></div><div id="timeremaining2" class="timeremaining">
+                Tiempo restante:<strong><span id="timeremainingvalue2" class="timeremainingvalue">60</span>sec</strong>
+            </div>
             
+            <div id="question2" class="question"></div>
+            
+            <div id="instruction" class="instruction">
+                Seleccione la respuesta correcta.
+            </div>
+            
+            <div id="choices2" class="choices">
+                <div id="box21" class="box"></div>
+                <div id="box22" class="box"></div>
+                <div id="box23" class="box"></div>
+                <div id="box24" class="box"></div>
+            </div>
+            <div id="startreset2" class="startreset">Iniciar Juego</div>
+            <div id="timeremaining2" class="timeremaining">
+                Tiempo restante: <span id="timeremainingvalue2" class="timeremainingvalue">60</span> sec
+            </div>
         </div>
-        
-        <div id="instruction">
-            click en la respuesta correcta
-        </div>
-        
-        <div id="choices">
-            <div id="box1" class="box"></div>
-            <div id="box2" class="box"></div>
-            <div id="box3" class="box"></div>
-            <div id="box4" class="box"></div>
-        </div>
-        <div id="startreset">Iniciar Juego</div>
-        <div id="timeremaining">
-            Tiempo restante: <span id="timeremainingvalue">60</span> sec
-        </div>
-        <div id="gameover">
-           
-        </div>
-    </div>
 
 
       </div>
     </div>
   </article>
-  <article class="strips__strip">
+  <article class="strips__strip" onclick="columna=3; console.log(columna);">
     <div class="strip__content">
       <h1 class="strip__title" data-name="column__4">Newton
         <i class="fas fa-star fa-3x"></i>
       </h1>
       <div class="strip__inner-text">
 
-        <div id="container">
-        <div id="score">
-            Puntaje: <span id="scorevalue">0</span>
-        </div>
-        <div id="correct">Correcto</div>
-        <div id="wrong">Intentelo de nuevo</div>
-        <div id="question">
+       <div class="container">
+            <div id="score3" class="score">
+                Puntaje: <strong><span id="scorevalue3" class="scorevalue">0</span></strong> 
+            </div><div id="correct3" class="correct"><i class="fas fa-check fa-3x" style="color:#42e252;"></i></div>
+            <div id="wrong3" class="wrong"><i class="fas fa-times fa-3x" style="color:#de401a;"></i></div><div id="timeremaining3" class="timeremaining">
+                Tiempo restante:<strong><span id="timeremainingvalue3" class="timeremainingvalue">60</span>sec</strong>
+            </div>
             
-        </div>
-        
-        <div id="instruction">
-            click en la respuesta correcta
-        </div>
-        
-        <div id="choices">
-            <div id="box1" class="box"></div>
-            <div id="box2" class="box"></div>
-            <div id="box3" class="box"></div>
-            <div id="box4" class="box"></div>
-        </div>
-        <div id="startreset">Iniciar Juego</div>
-        <div id="timeremaining">
-            Tiempo restante: <span id="timeremainingvalue">60</span> sec
-        </div>
-        <div id="gameover">
-           
-        </div>
-    </div>
-
+            <div id="question3" class="question"></div>
+            
+            <div id="instruction" class="instruction">
+                Seleccione la respuesta correcta.
+            </div>
+            
+            <div id="choices" class="choices">
+                <div id="box31" class="box"></div>
+                <div id="box32" class="box"></div>
+                <div id="box33" class="box"></div>
+                <div id="box34" class="box"></div>
+            </div>
+            <div id="startreset3" class="startreset">Iniciar Juego</div>
+            <div id="timeremaining3" class="timeremaining">
+                Tiempo restante: <span id="timeremainingvalue3" class="timeremainingvalue">60</span> sec
+            </div>
+<!--             <div id="gameover" class="gameover"></div>
+-->        </div>
       </div>
     </div>
   </article>
@@ -163,7 +162,29 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
   </article>
   <i class="fa fa-close strip__close"></i> 
 </section>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4>Se acabó tu tiempo 😣</h4>
+        </div>
+        <div class="modal-body" id="gameover" style="padding:40px 50px;">
+            <p><h3>Tu puntaje es: </h3> <h3 id="final-score"></h3></p>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+  </div> 
+
+
+
 
 
 <script type="text/javascript" src="script.js"></script>
